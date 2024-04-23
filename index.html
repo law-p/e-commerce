@@ -28,9 +28,8 @@
 
 	<!-- Custom stlylesheet -->
 	<link rel="stylesheet" href="css/style.css" />
-	
-	<style>
 
+	<style>
 		.my_color {
 			background-color: rgb(2, 14, 44);
 		}
@@ -2027,7 +2026,7 @@
 			margin: 15px 0px;
 		}
 
-		  /*=========================================================
+		/*=========================================================
 	       13 -> RESPONSIVE 
 	      ===========================================================*/
 
@@ -2146,47 +2145,88 @@
 							<!-- /Wishlist -->
 
 							<!-- Cart -->
-							<div class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+
+							<!-- /Cart -->
+							<!-- Cart -->
+							<div class="dropdown" id="cartDropdown">
+								<a class="dropdown-toggle" onclick="showCartModal()" href="#">
 									<i class="fa fa-shopping-cart"></i>
 									<span>Your Cart</span>
 									<div class="qty">3</div>
 								</a>
-								<div class="cart-dropdown">
-									<div class="cart-list">
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="./img/product01.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
+							</div>
+							<!-- /Cart -->
 
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="./img/product02.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
+							<!-- Cart Modal -->
+							<div class="modal" id="cartModal" tabindex="-1" role="dialog"
+								aria-labelledby="cartModalLabel" aria-hidden="true" style="display: none;">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+											<button type="button" class="close" aria-label="Close"
+												onclick="hideCartModal()">
+												<span aria-hidden="true">&times;</span>
+											</button>
 										</div>
-									</div>
-									<div class="cart-summary">
-										<small>3 Item(s) selected</small>
-										<h5>SUBTOTAL: $2940.00</h5>
-									</div>
-									<div class="cart-btns">
-										<a href="#">View Cart</a>
-										<a href="checkout.html">Checkout <i class="fa fa-arrow-circle-right"></i></a>
+										<div class="modal-body">
+											<!-- Cart content here -->
+											<!-- Cart -->
+
+
+											<div class="cart-list">
+												<div class="product-widget">
+													<div class="product-img">
+														<img src="./img/product01.png" alt="">
+													</div>
+													<div class="product-body">
+														<h3 class="product-name"><a href="#">Product Name Goes Here</a>
+														</h3>
+														<h4 class="product-price"><span class="qty">1x</span>$980.00
+														</h4>
+													</div>
+													<button class="delete"><i class="fa fa-close"></i></button>
+												</div>
+
+												<div class="product-widget">
+													<div class="product-img">
+														<img src="./img/product02.png" alt="">
+													</div>
+													<div class="product-body">
+														<h3 class="product-name"><a href="#">Product Name Goes Here</a>
+														</h3>
+														<h4 class="product-price"><span class="qty">3x</span>$980.00
+														</h4>
+													</div>
+													<button class="delete"><i class="fa fa-close"></i></button>
+												</div>
+											</div>
+											<div class="cart-summary">
+												<small>3 Item(s) selected</small>
+												<h5>SUBTOTAL: $2940.00</h5>
+											</div>
+
+
+											<!-- /Cart -->
+
+										</div>
+										<div class="modal-footer">
+											<!-- Cart buttons here -->
+											<div class="cart-btns>
+												<a href="#" class="mx-3">View Cart</a>
+												<hr>
+												<a href="checkout.html">Checkout <i
+														class="fa fa-arrow-circle-right"></i></a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<!-- /Cart -->
+							<!-- /Cart Modal -->
+
+
+
+
 
 							<!-- Menu Toogle -->
 							<div class="menu-toggle">
@@ -2231,7 +2271,7 @@
 	</nav>
 	<!-- /NAVIGATION -->
 
-	
+
 
 	<!-- SECTION -->
 	<div class="section">
@@ -2371,7 +2411,7 @@
 					</div>
 					<!-- /aside Widget -->
 
-					
+
 				</div>
 				<!-- /ASIDE -->
 
@@ -3356,59 +3396,59 @@
 	</div>
 	<!-- /SECTION -->
 
-<!-- SECTION -->
-<div class="section">
-	<!-- container -->
-	<div class="container">
-		<!-- row -->
-		<div class="row">
-			<!-- shop -->
-			<div class="col-md-4 col-xs-6">
-				<div class="shop">
-					<div class="shop-img">
-						<img src="./img/shop01.png" alt="">
-					</div>
-					<div class="shop-body">
-						<h3>Laptop<br>Collection</h3>
-						<a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+	<!-- SECTION -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- shop -->
+				<div class="col-md-4 col-xs-6">
+					<div class="shop">
+						<div class="shop-img">
+							<img src="./img/shop01.png" alt="">
+						</div>
+						<div class="shop-body">
+							<h3>Laptop<br>Collection</h3>
+							<a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /shop -->
+				<!-- /shop -->
 
-			<!-- shop -->
-			<div class="col-md-4 col-xs-6">
-				<div class="shop">
-					<div class="shop-img">
-						<img src="./img/shop03.png" alt="">
-					</div>
-					<div class="shop-body">
-						<h3>Accessories<br>Collection</h3>
-						<a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+				<!-- shop -->
+				<div class="col-md-4 col-xs-6">
+					<div class="shop">
+						<div class="shop-img">
+							<img src="./img/shop03.png" alt="">
+						</div>
+						<div class="shop-body">
+							<h3>Accessories<br>Collection</h3>
+							<a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /shop -->
+				<!-- /shop -->
 
-			<!-- shop -->
-			<div class="col-md-4 col-xs-6">
-				<div class="shop">
-					<div class="shop-img">
-						<img src="./img/shop02.png" alt="">
-					</div>
-					<div class="shop-body">
-						<h3>Cameras<br>Collection</h3>
-						<a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+				<!-- shop -->
+				<div class="col-md-4 col-xs-6">
+					<div class="shop">
+						<div class="shop-img">
+							<img src="./img/shop02.png" alt="">
+						</div>
+						<div class="shop-body">
+							<h3>Cameras<br>Collection</h3>
+							<a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+						</div>
 					</div>
 				</div>
+				<!-- /shop -->
 			</div>
-			<!-- /shop -->
+			<!-- /row -->
 		</div>
-		<!-- /row -->
+		<!-- /container -->
 	</div>
-	<!-- /container -->
-</div>
-<!-- /SECTION -->
+	<!-- /SECTION -->
 
 	<!-- FOOTER -->
 	<footer id="footer">
@@ -3488,6 +3528,20 @@
 	<script src="js/nouislider.min.js"></script>
 	<script src="js/jquery.zoom.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		// Function to show the cart modal
+		function showCartModal() {
+			// Show the modal
+			document.getElementById('cartModal').style.display = 'block';
+		}
+
+		// Function to hide the cart modal
+		function hideCartModal() {
+			// Hide the modal
+			document.getElementById('cartModal').style.display = 'none';
+		}
+	</script>
 
 </body>
 
